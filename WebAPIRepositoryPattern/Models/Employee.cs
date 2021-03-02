@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebAPIRepositoryPattern.Models
 {
@@ -13,9 +10,9 @@ namespace WebAPIRepositoryPattern.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public int FullName { get; set; }
-        public int Department { get; set; }
-        public int JoinDate { get; set; }
+        public string FullName { get; set; }
+        public string Department { get; set; }
+        public DateTime JoinDate { get; set; }
 
 
     }
